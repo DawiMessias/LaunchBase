@@ -8,15 +8,28 @@ const usuarios = [
     { nome: "Tuane", tecnologias: ["HTML", "Node.js"] }
 ];
 
-function checaSeUsuarioUsaCSS(usuario) {
-    for (let i = 0; i < usuarios.length; i++) {
-        const usuarioTrabalhaComCSS = checaSeUsuarioUsaCSS(usuario[i]);
+//const userCSS = usuarios.filter(user => user.tecnologias.includes("CSS")) 
+//Assim também percorre o Array e retorna quem contém "CSS".
+for ( let usuario of usuarios) {
+    console.log(`${usuario.nome} trabalha com ${usuario.tecnologias.join(', ')}`)
+}
 
-        if (usuarioTrabalhaComCSS) {
-            console.log(`O usuário ${usuarios[i].nome} trabalha com CSS`);
-        } else {
-            console.log(`O usuario ${usuarios[i].nome} não trabalha com CSS `)
-        }
-        console.log(i)
+function checaSeUsuarioUsaCSS(usuario) {
+    for ( let tecnologia of usuario.tecnologias) {
+        if ( tecnologia == "CSS")
+            return true
     }
+
+    return false
+}
+
+
+for ( let i = 0; i < usuarios.length; i++) {
+    const usuarioTrablhaComCss = checaSeUsuarioUsaCSS(usuarios[i])
+
+    if ( usuarioTrablhaComCss) {
+        console.log(`O usuario ${usuarios[i].nome} trabalha com CSS`)
+    }
+
+
 }
