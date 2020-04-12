@@ -1,6 +1,7 @@
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #F2F8FD;
+  background-color: #FFF;
+  text-align: center;
 }
 
 img {
@@ -20,15 +21,30 @@ img:hover {
 }
 
 h1 {
-  font-size: 100px;
+  font-size: 50px;  
   text-shadow: #BDCCFF 2px 3px 2px;
+}
+ul {
+  list-style-type: none;
 }
 
 a {
-  padding: 20px;
+  padding: 20px 20px;
   text-decoration: none;
 }
 
 a:hover {
   color: #580BE4;
+}
+
+.node {
+  color: #41B619;
+}
+
+.react {
+  color: #2398AB;
+}
+
+.native {
+  color: #004156; 
 }
