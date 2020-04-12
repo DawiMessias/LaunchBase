@@ -1,5 +1,9 @@
+body {
+    font-size: 20px;
+}
+
 header {
-    background-color: #D7FFFE;
+    background-color: #E6E7E8;
     font-family: 'Roboto', sans-serif;
     padding: 30px 30px;
     text-align: center;
@@ -7,4 +11,9 @@ header {
 
 header a {
     padding: 30px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF00CC;
 }
