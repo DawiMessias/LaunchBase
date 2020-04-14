@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     padding: 0%;
     margin: 0%;
@@ -36,11 +40,20 @@ h3 {
 Conteudo do starte
 */
 .starte {
-
+   box-shadow: 0 4px 8px 0 rgb(13, 13, 14);
+   border-radius: 60px 60px 60px;
+}
+.starte:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+.all-content {
+    color: #58357B;
+    padding: 24px;
+}
 .container-img-starte {
-
+    width: 100%;
+    border-radius: solid ;
 }
 
 .content {
