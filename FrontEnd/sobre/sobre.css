@@ -1,9 +1,15 @@
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #FFF;
   text-align: center;
+  color: #fff;
+  background-color: #01142F;
 }
-
+ header {
+  background-color: #E6E7E8;
+  font-family: 'Roboto', sans-serif;
+  padding: 30px 30px;
+  text-align: center;
+ }
 img {
   background-color: #fff;
   border: 2px solid #fff;
@@ -47,4 +53,10 @@ a:hover {
 
 .native {
   color: #004156; 
+}
+
+footer {
+  background-color: rgb(245, 250, 255);
+  padding: 30px 300px;
+  text-align: center;
 }
