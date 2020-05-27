@@ -9,6 +9,7 @@
   "aside aside aside"
   "footer footer footer";
   grid-template-columns:  180px 50px 50px;
+  grid-template-rows: 50px 50px 50px
 }
 
 .header{
@@ -27,6 +28,17 @@
 
 .header nav a {
   margin: 0 30px;
+  text-decoration: none;
+  color: #111111;
+}
+
+#login {
+  font-size: 30px;
+  margin-left: 80px;
+}
+
+#login:hover {
+  color: rgba(0, 0, 0, .5);
 }
 
 .container-main {
@@ -35,7 +47,7 @@
   align-items: center;
   margin: 0 auto;
   background: #FBDFDB;
-  width: 900px;
+  width: 1000px;
   height: 300px;
   border-radius: 30px;
 }
@@ -70,13 +82,101 @@
   color: #000000;
   line-height: 28px;
   text-decoration: none;
+  position: relative;
+}
+@keyframes seta {
+  from {
+    right: -25px;
+  }
+  to {
+    right: -40px;
+  }
 }
 
 .main a::after {
   content: '←';
-  margin: 0 4px;
+  color: rgba(17, 13, 13, 0.3);
+  animation: seta .5s ease-in 0s infinite alternate;
+  position: absolute;
+  right: -2px;
+  overflow: auto;
+
 }
 
+aside  > h1 {
+  margin: 40px auto;
+  text-align: center;
+}
+.input {
+  margin: 0 auto;
+}
+
+.opções {
+  display: grid;
+}
+
+aside input {
+  width: 300px;
+  margin: 10px auto;
+  border-radius: 10px;
+  border: 3px solid #252525;
+  background: none;
+  font-size: 1.5em;
+  padding: 10px;
+}
+
+.opções h2 {
+  margin: 8px 8px;
+}
+
+.opções p {
+  margin: 10px 10px;
+}
 .container-chefe img{
   margin-right: 40px;
+}
+
+.container-pratos {
+  grid-area: aside;
+  max-width: 960px;
+  display: flex;
+	margin: 0 auto;
+}
+
+.container-item {
+  margin: 10px 20px;
+  max-width: 960px;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.container-item h2 {
+  margin: 8px auto;
+}
+
+.container-item::after{
+  content: "♡  4.9 (15)";
+  content: 4.9 (15);
+}
+
+
+
+.container-item p {
+  margin: 0 auto;
+  margin-top: 8px;
+}
+
+.footer {
+  grid-area: footer;
+  padding: 10px;
+  background: #EEEEEE;
+  text-align: center;
+}
+
+.footer p {
+  text-align:  center;
+	font-size: 1.125em;
+	padding: 10px;
+	font-size: 1.2em;
+	line-height: 1.6;
 }
