@@ -1,6 +1,10 @@
 * { 
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
 }
 .estrutura {
   grid-template-areas: 
@@ -17,9 +21,8 @@
   align-items: center;
   margin: 20px auto;
   display: flex;
-  max-width: 960px;
+  max-width: 1000px;
   font-size: 15px;
-  
 }
 
 .header img {
@@ -27,7 +30,7 @@
 }
 
 .header nav a {
-  margin: 0 30px;
+  margin: 0 20px;
   text-decoration: none;
   color: #111111;
 }
@@ -37,8 +40,13 @@
   margin-left: 80px;
 }
 
-#login:hover {
-  color: rgba(0, 0, 0, .5);
+#Signup {
+  font-size: 30px;
+  margin-left: 80px;
+}
+
+#login:hover, #Signup:hover {
+  color: #FBDFDB;
 }
 
 .container-main {
@@ -103,7 +111,11 @@
 
 }
 
-aside  > h1 {
+.aside-container {
+  display: flex;
+}
+
+#More{
   margin: 40px auto;
   text-align: center;
 }
@@ -125,11 +137,16 @@ aside input {
   padding: 10px;
 }
 
+
 .opções h2 {
   margin: 8px 8px;
 }
 
 .opções p {
+  margin: 8px 8px;
+}
+
+.opções a {
   margin: 10px 10px;
 }
 .container-chefe img{
@@ -179,4 +196,26 @@ aside input {
 	padding: 10px;
 	font-size: 1.2em;
 	line-height: 1.6;
+}
+
+#assine {
+  flex: 1;
+	align-self: flex-start;
+	padding: 10px;
+	border: 3px solid #252525;
+	background: none;
+	font-size: 1.5em;
+	font-style: italic;
+	font-family: Georgia, serif;
+}
+
+button {
+	background: #252525;
+  border: 5px solid;
+  padding: 10px;
+	font-family: Georgia, serif;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	color: #fff;
+	cursor: pointer;
 }
