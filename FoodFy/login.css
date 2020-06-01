@@ -1,0 +1,41 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.estrutura {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "header" "main";
+}
+
+.container-header {
+    text-align: center;
+    grid-area: header;
+}
+
+.container-header img {
+   width: 300px;
+   border-radius: 5px;
+}
+
+.container-main {
+    margin: 10px 40px;
+    text-align: center;
+}
+.container-main input {
+    margin: 40px 10px;
+    padding: 20px;
+}
+
+.container-main button {
+    background: #252525;
+    border: 5px solid;
+    padding: 16px;
+    font-family: Georgia, serif;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: #fff;
+    cursor: pointer;
+
+}
