@@ -4,14 +4,18 @@ const server = express();
 
 server.set("view engine", "html");
 
-nunjucks.configure("FrontEnd", {
+server.use(express.static("public"));
+
+nunjucks.configure("Views", {
   express:server
 })
 
 server.get("/", function(req, res) {
-    return res.send("Hi!")
+    return res.render("home")
 })
 
-server.listen(4000, function() {
-  console.log("Hello estou no Ar")
-});
+server.get("/sobre", function(req, res) {
+  return res.render("sobre")
+})
+
+server.listen(4000);
