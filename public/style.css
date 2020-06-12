@@ -1,0 +1,28 @@
+* {
+    padding: 0px;
+    margin: 0px;  
+    list-style: none;
+    text-decoration: none;  
+}
+
+header {
+    background: linear-gradient(135deg, #8844ee, #b07dfb);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+header a {
+    padding: 30px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+header a {
+    padding: 30px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+a:hover {
+    color: #FF00CC;
+}
