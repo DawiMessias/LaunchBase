@@ -7,15 +7,17 @@ server.set("view engine", "html");
 server.use(express.static("public"));
 
 nunjucks.configure("Views", {
-  express:server
+  express:server,
+  autoescape: true,
+  watch: true,
 })
 
 server.get("/", function(req, res) {
-    return res.render("home")
+     return res.render("home")
 })
 
-server.get("/sobre", function(req, res) {
-  return res.render("sobre")
+server.get("/cursos", function(req, res) {
+  return res.render("cursos")
 })
 
 server.listen(4000);
