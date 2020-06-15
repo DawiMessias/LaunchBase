@@ -20,4 +20,8 @@ server.get("/cursos", function(req, res) {
   return res.render("cursos")
 })
 
+server.get("/sobre", function(req, res) {
+  return res.render("sobre")
+})
+
 server.listen(4000);
