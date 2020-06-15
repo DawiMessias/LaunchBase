@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #01142F;
+}
+header {
+    background-color: rgb(245, 250, 255);
+    padding: 30px 30px;
+    text-align: center;
+}
+
+header a {
+    padding: 30px;
+    text-decoration: none;
+    
+}
+
+header a:hover {
+    color: #782FEF;
+}
+
+h3 {
+    text-align: center;
+    color: #fff;
+}
+/*
+.container-cursos TODOS OS MODALS
+*/
+.container-cursos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 20px;
+    color: rgb(233, 216, 216);
+    overflow: hidden;
+    -webkit-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    -moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    -ms-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    -o-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+}
+
+.container-cursos:hover {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+}
+.starte-container {
+    padding: 20px 20px; 
+}
+
+.launch-container {
+    padding: 20px 20px; 
+}
+
+.gostack-container {
+    padding: 20px 20px; 
+}
+/*
+Conteudo do curso
+*/
+.starte {
+   box-shadow: 0 4px 8px 0 rgb(77, 77, 216);
+   border-radius: 60px 60px 60px;
+   background-color: #fff;
+   scroll-padding-right: 20px;
+}
+.starte:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.all-content {
+    color: rgb(3, 3, 3);
+    padding: 24px;
+}
+.container-img-starte {
+    width: 100%;
+    border-radius: solid ;
+}
+
+.content a {
+    text-decoration: underline;
+    text-decoration-color: #782FEF;
+    color: rgb(0, 0, 0);
+    
+}
+
+.content a:hover {
+    color: #782FEF;
+}
+
+.content-launch a:hover{
+    color: #FE8C00;
+}
+.content-gostack {
+   
+}
+.content-gostack a:hover {
+    color: #64E408;
+}
