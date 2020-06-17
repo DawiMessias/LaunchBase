@@ -2,7 +2,7 @@ const nunjucks = require("nunjucks");
 const express = require("express");
 const server = express();
 
-server.set("view engine", "html");
+server.set("view engine", "njk");
 
 server.use(express.static("public"));
 
@@ -25,3 +25,4 @@ server.get("/sobre", function(req, res) {
 })
 
 server.listen(4000);
+
