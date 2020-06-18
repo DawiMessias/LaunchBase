@@ -1,0 +1,62 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: #fff;
+  background-color: #01142F;
+}
+ header {
+  background-color: #E6E7E8;
+  font-family: 'Roboto', sans-serif;
+  padding: 30px 30px;
+  text-align: center;
+ }
+img {
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 150px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;  
+}
+
+img:hover {
+  -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+h1 {
+  font-size: 50px;  
+  text-shadow: #BDCCFF 2px 3px 2px;
+}
+ul {
+  list-style-type: none;
+}
+
+a {
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #580BE4;
+}
+
+.node {
+  color: #41B619;
+}
+
+.react {
+  color: #2398AB;
+}
+
+.native {
+  color: #004156; 
+}
+
+footer {
+  background-color: rgb(245, 250, 255);
+  padding: 30px 300px;
+  text-align: center;
+}
