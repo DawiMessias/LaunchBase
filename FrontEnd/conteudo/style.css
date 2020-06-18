@@ -1,0 +1,103 @@
+:root {
+    --color-rocket: #7159c1
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+}
+  
+  
+.modal-overlay {
+    background: rgb(0, 0, 0, .7);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+}
+  
+.modal {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+  
+.modal .close-modal {
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+    
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.cards {
+    max-width: 800px;
+    gap: 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    background-color: var(--color-rocket);
+    margin: 10px 20px;
+}
+
+.card_image_container {
+    width: 100%;
+}
+
+.card_content, .card_info {
+    padding: 24px;
+}
+
+.card_content p {
+    filter: brightness(90%);
+    background-color: var(--color-rocket);
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center; 
+}
+
+.card_image_container img {
+    width: 100%;
+}
+
+.card_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.card_info  > p {
+    filter: brightness(90%);
+    background-color: var(--color-rocket);
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center; 
+}
+
+.card_price {
+    background-color: var(--color-rocket);
+    filter: brightness(90%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center; 
+}
