@@ -12,6 +12,8 @@
 body {
     color: white;
 }
+
+
   
   
 .modal-overlay {
@@ -84,7 +86,9 @@ iframe {
 }
 
 .card_image_container img {
-    width: 100%;
+    width: 50%;
+    padding: 25px;
+    margin: 0 auto;
 }
 
 .card_info {
