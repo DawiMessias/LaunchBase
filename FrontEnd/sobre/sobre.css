@@ -1,62 +1,72 @@
-body {
+* {
   font-family: 'Roboto', sans-serif;
-  text-align: center;
-  color: #fff;
-  background-color: #01142F;
+  margin: 0px;
+  padding: 0px;
 }
- header {
-  background-color: #E6E7E8;
-  font-family: 'Roboto', sans-serif;
-  padding: 30px 30px;
-  text-align: center;
- }
+
 img {
-  background-color: #fff;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  height: 150px;
-  position: relative;
-  max-width: 100%;
-  overflow: hidden;  
+  width: 400px;
+  height: auto;
 }
 
-img:hover {
-  -moz-transform: scale(1.1);
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
+
+header {
+  background-color: rgb(113, 89, 193);
+  grid-area: header;
 }
 
-h1 {
-  font-size: 50px;  
-  text-shadow: #BDCCFF 2px 3px 2px;
-}
-ul {
-  list-style-type: none;
-}
-
-a {
-  padding: 20px 20px;
-  text-decoration: none;
+.header {
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-a:hover {
-  color: #580BE4;
+h2 {
+  margin: 20px auto;
+  text-align: center;
+  font-size: 40px;
 }
 
-.node {
-  color: #41B619;
+
+.header img {
+  width: auto;
+  max-width:200px;
+  max-height:150px;
+  height: auto;
+}
+.header p {
+  font-size: 21px;
+  text-align: center;
 }
 
-.react {
-  color: #2398AB;
+.grid {
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "header" "main" "footer"
 }
 
-.native {
-  color: #004156; 
+
+.card {
+  margin: 8px 10px;
+  width: 450px;
+  max-width: 600px;
 }
 
 footer {
-  background-color: rgb(245, 250, 255);
-  padding: 30px 300px;
-  text-align: center;
+  grid-area: footer;
+  display: flex;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  justify-content: space-around;
+  margin: 10px auto;
+  font-size: 40px;
+}
+
+footer a:hover {
+  color: rgb(113, 89, 193);
 }
