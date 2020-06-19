@@ -1,6 +1,7 @@
 const nunjucks = require("nunjucks");
 const express = require("express");
 const server = express();
+server.listen(4000);
 
 server.set("view engine", "njk");
 
@@ -24,5 +25,8 @@ server.get("/sobre", function(req, res) {
   return res.render("sobre")
 })
 
-server.listen(4000);
+server.get("/cursos/:id", function(req, res) {
+  const id = req.params.id;
 
+  return res.send(`O id fornecido na rota é: ${id}`)
+})

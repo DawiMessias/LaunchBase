@@ -8,23 +8,61 @@
 <title>Sobre - Rocketseat</title>
 
 <body>
-    <header>
-        <h1>Rocketseat</h1>
-    </header>
+ 
+  <h3>“Você nunca sai perdendo quando ganha conhecimento!”</h3>
+  <section class="cards">
 
-    <h2>Domine o desenvolvimento web do zero e acelere na direção dos seus objetivos.</h2>
-    <button>LaunchBase</button>
-    <main>
-        <div class="modal-ovelay">
-            <div class="modal">
-                <a class="close-modal">
-                    <i class="material-icons">close</i>
-                </a>
+    <div class="card" id="starter">
+        <div class="card_image_container">
+            <img src="../Assets/starte.svg" alt="starte">
+          </div>
+          <div class="card_content">
+            <p>starte</p>
+          </div>
+          <div class="card_info">
+            <p>Módulos: 8</p>
+            <p class="card_price">Free</p>
+          </div>
+    </div>
 
-                <div class="modal-content">
-                </div>
-            </div>
+    <div class="card" id="launchbase">
+        <div class="card_image_container">
+            <img src="../Assets/launchbase.svg" alt="starte">
+          </div>
+          <div class="card_content">
+            <p>LaunchBase</p>
+          </div>
+          <div class="card_info">
+            <p>Módulos: 8</p>
+            <p class="card_price">Reservar Vaga.</p>
+          </div>
+    </div>
+
+    <div class="card" id="gostack">
+        <div class="card_image_container">
+            <img src="../Assets/GoStack.svg" alt="starte">
+          </div>
+          <div class="card_content">
+            <p>Gostack</p>
+          </div>
+          <div class="card_info">
+            <p>Módulos: 10</p>
+            <p class="card_price">Reservar Vaga.</p>
+          </div>
+    </div>
+
+
+  </section>
+
+  <div class="modal-overlay active">
+    <div class="modal">
+        <a class="close-modal">
+            <i class="material-icons">close</i>
+        </a>
+
+        <div class="modal_content">
+            <iframe src="https://rocketseat.com.br/" ></iframe>
         </div>
-    </main>
-</body>
+    </div>
+  </div>
 {% endblock %}

@@ -1,10 +1,36 @@
 {% extends "layout.njk" %}
 
 {% block sobre %}
-  <title>Document</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/sobre.css">
+    <title>Sobre - Rocketseat</title>
 </head>
 <body>
-  <h1>Falar sobre a Rocket</h1>
+    <header>
+        <div class="header">
+            <img src="../Assets/logo-rocketseat.svg">
+        </div>
+    </header>
+    
+    <h2>Principais tecnologias</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="../Assets/node.png" alt="Node"></img>
+        </div>
+        <div class="card">
+            <img src="../Assets/react.png" alt="React-JS">
+        </div>
+        <div class="card">
+            <img src="../Assets/native.png" alt="React-Native">
+        </div>
+    </div>
+    <footer>
+        <a href="https://github.com/Rocketseat" target="_blank">GitHub</a>
+        <a href="https://www.instagram.com/rocketseat_oficial/?hl=pt-br"target="_blank">instagram</a>
+        <a href="https://pt-br.facebook.com/rocketseat/" a_blank>facebook</a>
+    </footer>
 </body>
 </html>
 {% endblock %}
