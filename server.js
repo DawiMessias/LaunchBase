@@ -15,6 +15,7 @@ nunjucks.configure("Views", {
   express:server,
   autoescape: false,
   watch: true,
+  noCache: true,
 })
 
 server.get("/", function(req, res) {
@@ -22,11 +23,11 @@ server.get("/", function(req, res) {
   return res.render("home",)
 })
 
-server.get("/cursos", function(req, res) {
-  return res.render("cursos", {items: content })
+server.get("/courses", function(req, res) {
+  return res.render("courses", {items: content })
 })
 
-server.get("/sobre", function(req, res) {
+server.get("/about", function(req, res) {
   const sobre = {
     link: [
       { github: "Github", url: "https://github.com/Rocketseat"},
@@ -35,12 +36,30 @@ server.get("/sobre", function(req, res) {
     ]
   }
 
-  return res.render("sobre", { sobre })
+  return res.render("about", { sobre })
 })
 
-server.get("/cursos/:id", function(req, res) {
+server.get("/courses/:id", function(req, res) {
   const id = req.params.id;
 
-  return res.send(`O id fornecido na rota é: ${id}`)
+  return res.send(`O id fornecido na rota é: ${id}`);
+})
+
+server.get("/video" , function(req, res) {
+  const id = req.query.id
+
+  const contents = content.find(function(contents){
+    if ( contents.id == id) {
+      return true
+    }
+  })
+
+  if ( !contents ) {
+    return res.send("Video not found!")
+  }
+
+  //return res.send("starter", { content })
+  return res.status(200).send("Encontrei")
+
 })
 
