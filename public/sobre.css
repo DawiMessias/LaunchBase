@@ -52,6 +52,7 @@
     margin: 8px 10px;
     width: 450px;
     max-width: 600px;
+    cursor: pointer;
   }
   
   footer {
