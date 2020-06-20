@@ -2,6 +2,7 @@ const express = require("express");
 const nunjucks = require("nunjucks");
 
 const server = express();
+const content = require("./data")
 
 
 server.listen(4002);
@@ -17,26 +18,25 @@ nunjucks.configure("Views", {
 })
 
 server.get("/", function(req, res) {
-     return res.render("home")
+  
+  return res.render("home",)
 })
-
-
 
 server.get("/cursos", function(req, res) {
-  return res.render("cursos")
+  return res.render("cursos", {items: content })
 })
-
-server.use(function(req, res) {
-  res.status(404).render("not-found");
-});
 
 server.get("/sobre", function(req, res) {
-  return res.render("sobre")
-})
+  const sobre = {
+    link: [
+      { github: "Github", url: "https://github.com/Rocketseat"},
+      { github: "Instagram", url: "https://www.instagram.com/rocketseat_oficial/?hl=pt-br"},
+      { github: "Facebook", url: "https://pt-br.facebook.com/rocketseat/"},
+    ]
+  }
 
-server.use(function(req, res) {
-  res.status(404).render("not-found");
-});
+  return res.render("sobre", { sobre })
+})
 
 server.get("/cursos/:id", function(req, res) {
   const id = req.params.id;
@@ -44,6 +44,3 @@ server.get("/cursos/:id", function(req, res) {
   return res.send(`O id fornecido na rota é: ${id}`)
 })
 
-server.use(function(req, res) {
-  res.status(404).render("not-found");
-});
