@@ -3,7 +3,7 @@ module.exports = [
         id: "starter",
         title: "Curso: starte",
         duration: "Módulos: 8",
-        price: "Free"
+        price: "Free",
     },
     {
         id: "launchbase",
@@ -15,7 +15,7 @@ module.exports = [
         id: "gostack",
         title: "Curso: Gostack",
         duration: "Módulos: 10",
-        price: "Reservar Vaga"
+        price: "Reservar Vaga",
     },
 
 ]
