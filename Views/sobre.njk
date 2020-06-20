@@ -17,7 +17,7 @@
     <h2>Principais tecnologias</h2>
     <div class="grid">
         <div class="card">
-            <img src="../Assets/node.png" alt="Node"></img>
+            <img src="../Assets/node.png" alt="Node">
         </div>
         <div class="card">
             <img src="../Assets/react.png" alt="React-JS">
@@ -27,9 +27,9 @@
         </div>
     </div>
     <footer>
-        <a href="https://github.com/Rocketseat" target="_blank">GitHub</a>
-        <a href="https://www.instagram.com/rocketseat_oficial/?hl=pt-br"target="_blank">instagram</a>
-        <a href="https://pt-br.facebook.com/rocketseat/" a_blank>facebook</a>
+        {% for link in sobre.link%}
+        <a href="{{link.url }}" target="_blank">{{link.github}}</a>
+        {% endfor %}
     </footer>
 </body>
 </html>

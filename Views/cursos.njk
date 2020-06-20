@@ -10,48 +10,22 @@
 <body>
  
   <h3>“Você nunca sai perdendo quando ganha conhecimento!”</h3>
+
   <section class="cards">
-
-    <div class="card" id="starter">
-        <div class="card_image_container">
-            <img src="../Assets/starte.svg" alt="starte">
+    {% for item in items %}
+      <div class="card" id="{{item.id}}">
+          <div class="card_image_container">
+            <img src="../Assets/starte.svg" alt="Imagem de{{item.title}}">
           </div>
           <div class="card_content">
-            <p>starte</p>
+            <p>{{item.title}}</p>
           </div>
           <div class="card_info">
-            <p>Módulos: 8</p>
-            <p class="card_price">Free</p>
+            <p>{{item.duration}}</p>
+            <a href="" class="card_price">{{item.price}}</a>
           </div>
-    </div>
-
-    <div class="card" id="launchbase">
-        <div class="card_image_container">
-            <img src="../Assets/launchbase.svg" alt="starte">
-          </div>
-          <div class="card_content">
-            <p>LaunchBase</p>
-          </div>
-          <div class="card_info">
-            <p>Módulos: 8</p>
-            <p class="card_price">Reservar Vaga.</p>
-          </div>
-    </div>
-
-    <div class="card" id="gostack">
-        <div class="card_image_container">
-            <img src="../Assets/GoStack.svg" alt="starte">
-          </div>
-          <div class="card_content">
-            <p>Gostack</p>
-          </div>
-          <div class="card_info">
-            <p>Módulos: 10</p>
-            <p class="card_price">Reservar Vaga.</p>
-          </div>
-    </div>
-
-
+      </div>
+    {% endfor %}
   </section>
 
   <div class="modal-overlay active">
@@ -65,4 +39,5 @@
         </div>
     </div>
   </div>
+<script src="index.js"></script>
 {% endblock %}
