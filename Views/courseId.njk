@@ -1,0 +1,28 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<link rel="stylesheet" href="cursos.css">
+    
+<title>{{item.id}}</title>
+
+<body>
+ 
+  <h3>“Você nunca sai perdendo quando ganha conhecimento!”</h3>
+
+  <section class="video">
+      <div class="card" id="{{item.id}}">
+          <div class="card_video_container">
+            <iframe src="https://rocketseat.com.br/{{item.id}}" ></iframe>
+          </div>
+          <div class="card_content">
+            <p>{{item.title}}</p>
+          </div>
+          <div class="card_info">
+            <p>{{item.duration}}</p>
+            <a href="https://rocketseat.com.br/{{item.id}}" class="card_price">{{item.price}}</a>
+          </div>
+      </div>
+  </section>
+{% endblock %}
