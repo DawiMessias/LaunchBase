@@ -25,22 +25,10 @@
           </div>
           <div class="card_info">
             <p>{{item.duration}}</p>
-            <a href="" class="card_price">{{item.price}}</a>
+            <a href="https://rocketseat.com.br/{{item.id}}" class="card_price">{{item.price}}</a>
           </div>
       </div>
     {% endfor %}
   </section>
-
-  <div class="modal-overlay active">
-    <div class="modal">
-        <a class="close-modal">
-            <i class="material-icons">close</i>
-        </a>
-
-        <div class="modal_content">
-            <iframe src="https://rocketseat.com.br/" ></iframe>
-        </div>
-    </div>
-  </div>
 <script src="index.js"></script>
 {% endblock %}
