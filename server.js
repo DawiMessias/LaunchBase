@@ -5,7 +5,7 @@ const server = express();
 const content = require("./data")
 
 
-server.listen(4002);
+server.listen(4003);
 
 server.set("view engine", "njk");
 
@@ -42,7 +42,15 @@ server.get("/about", function(req, res) {
 server.get("/courses/:id", function(req, res) {
   const id = req.params.id;
 
-  return res.send(`O id fornecido na rota é: ${id}`);
+  const contents = content.find(function(contents){
+    return  content.id == id
+  })
+
+  if ( !contents ) {
+    return res.render("not-found")
+  }
+
+  return res.render("courseId", { items: content })
 })
 
 server.get("/video" , function(req, res) {
@@ -55,11 +63,10 @@ server.get("/video" , function(req, res) {
   })
 
   if ( !contents ) {
-    return res.send("Video not found!")
+    return res.render("not-found")
   }
 
-  //return res.send("starter", { content })
-  return res.status(200).send("Encontrei")
+  return res.render("courseId", { items: content })
 
 })
 
